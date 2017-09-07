@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_dialog_fetch_data_error">Erro ao carregar os dados. Por favor tente novamente!</string>
+
+    <string name="home_title_movies">FILMES</string>
+    <string name="home_title_favorites">FAVORITOS</string>
+    <string name="home_load_more_limit">Não existem mais dados a serem carregados!</string>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/default_appbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/home_tab"
+            style="@style/HomeTab"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?attr/colorPrimary"
+            app:tabMode="fixed"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <com.lapism.searchview.SearchView
+        android:id="@+id/home_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:search_clear_on_close="true"
+        app:search_shadow="false"
+        app:search_theme="light"
+        app:search_voice="false"
+        app:search_version="menu_item"
+        app:search_version_margins="menu_item"/>
+
+</android.support.design.widget.CoordinatorLayout>

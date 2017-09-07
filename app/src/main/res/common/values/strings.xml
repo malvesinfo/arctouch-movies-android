@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ArcTouch Movies</string>
+    <string name="progress_loading">Carregando...</string>
+    <string name="dialog_ok">OK</string>
+</resources>
