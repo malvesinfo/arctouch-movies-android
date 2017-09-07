@@ -108,6 +108,8 @@ public class MoviesFragment extends BaseFragment implements HomeMoviesAdapter.On
 
     public void showMovies(@NonNull List<Movie> movieList) {
         moviesAdapter.updateItems(movieList, isLoadingMore);
+        if (!isLoadingMore)
+            recyclerView.scrollToPosition(0);
         isLoadingMore = false;
     }
 
